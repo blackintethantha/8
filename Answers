@@ -1,0 +1,54 @@
+Q1. The wine quality dataset contains several physicochemical features that influence the 
+quality of wine. These include: 
+• Fixed acidity, Volatile acidity, Citric acid: Affect the taste and preservation quality. 
+• Residual sugar: Affects sweetness and density. 
+• Chlorides: Contribute to the salty taste. 
+• Free sulphur dioxide, Total sulphur dioxide: Preserve freshness and prevent 
+microbial growth. 
+• Density: Correlates with sugar and alcohol content. 
+• pH: Indicates the level of acidity. 
+• Sulphates: Related to wine preservation. 
+• Alcohol: Generally, a higher alcohol level tends to correlate with higher quality. 
+• Quality (target): A sensory score assigned to the wine. 
+Among these, alcohol, volatile acidity, sulphates, and citric acid often have a stronger 
+correlation with wine quality. 
+Q2. In the wine dataset, there were no missing values. However, if there were, we would 
+consider the following imputation techniques: 
+• Mean/Median Imputation: Easy and fast, but can reduce variance. 
+• Mode Imputation: Best for categorical data but may not work well with skewed 
+distributions. 
+• KNN Imputation: Uses neighbouring values but is computationally expensive. 
+• Regression Imputation: More accurate, but can introduce model bias. 
+• Dropping Missing Rows: Avoids introducing bias but may lead to loss of useful data. 
+We usually choose the technique based on the type of feature and percentage of missing 
+data. 
+Q3. Key factors affecting student performance include: 
+• Study time and absences 
+• Parental education and support 
+• Participation in tutoring and extracurriculars 
+• Socioeconomic status 
+• Mental and physical health 
+To analyze these, we can: 
+• Use correlation matrices to examine relationships. 
+• Apply regression analysis to quantify effects. 
+• Use hypothesis testing to test assumptions. 
+• Use visualizations like boxplots or histograms to explore distributions. 
+• Perform classification (e.g., logistic regression) if predicting pass/fail outcomes. 
+Q4. In our feature engineering: 
+• We selected relevant features such as studytimeweekly, absences, tutoring, and 
+parentalsupport. 
+• We used Label Encoding to transform categorical features like gender, ethnicity, and 
+parentaleducation into numerical values. 
+• We created a new target variable called Performance, labelling students as high (gpa 
+≥ 3.0) or low performers. 
+• This made the dataset ready for model building and classification tasks. 
+Q5. During EDA on the wine dataset, we observed the following: 
+• Most features like volatile acidity, residual sugar, and chlorides were skewed and 
+not normally distributed. 
+• Alcohol and citric acid were more normally distributed. 
+• We used histograms and boxplots to visualize the distribution. 
+• For non-normal features, we can apply transformations like: 
+• Log transformation: Useful for reducing right skew. 
+• Square root or Box-Cox transformations: Help stabilize variance. 
+Transforming features can improve model performance and satisfy assumptions for linear 
+models.
